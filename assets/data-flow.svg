@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold">數據流程圖</text>
+
+    <!-- YouTube數據源 -->
+    <g transform="translate(100,100)">
+        <rect width="150" height="60" rx="5" fill="#f44336" stroke="#b71c1c"/>
+        <text x="75" y="35" text-anchor="middle" fill="white">YouTube視頻源</text>
+    </g>
+
+    <!-- 字幕處理 -->
+    <g transform="translate(325,100)">
+        <rect width="150" height="60" rx="5" fill="#2196f3" stroke="#0d47a1"/>
+        <text x="75" y="35" text-anchor="middle" fill="white">字幕處理</text>
+    </g>
+
+    <!-- AI分析 -->
+    <g transform="translate(550,100)">
+        <rect width="150" height="60" rx="5" fill="#4caf50" stroke="#1b5e20"/>
+        <text x="75" y="35" text-anchor="middle" fill="white">AI分析</text>
+    </g>
+
+    <!-- 知識庫 -->
+    <g transform="translate(325,250)">
+        <rect width="150" height="60" rx="5" fill="#ff9800" stroke="#e65100"/>
+        <text x="75" y="35" text-anchor="middle" fill="white">知識庫</text>
+    </g>
+
+    <!-- 用戶界面 -->
+    <g transform="translate(325,400)">
+        <rect width="150" height="60" rx="5" fill="#9c27b0" stroke="#4a148c"/>
+        <text x="75" y="35" text-anchor="middle" fill="white">用戶界面</text>
+    </g>
+
+    <!-- 數據流向 -->
+    <g stroke="#666" stroke-width="2" fill="none">
+        <!-- YouTube到字幕處理 -->
+        <path d="M250,130 L325,130" marker-end="url(#arrowhead)"/>
+        <text x="287" y="120" text-anchor="middle" font-size="12">原始字幕</text>
+
+        <!-- 字幕處理到AI分析 -->
+        <path d="M475,130 L550,130" marker-end="url(#arrowhead)"/>
+        <text x="512" y="120" text-anchor="middle" font-size="12">處理後文本</text>
+
+        <!-- AI分析到知識庫 -->
+        <path d="M625,160 L625,280 L475,280" marker-end="url(#arrowhead)"/>
+        <text x="550" y="270" text-anchor="middle" font-size="12">分析結果</text>
+
+        <!-- 知識庫到用戶界面 -->
+        <path d="M400,310 L400,400" marker-end="url(#arrowhead)"/>
+        <text x="420" y="355" text-anchor="middle" font-size="12">展示數據</text>
+
+        <!-- 用戶界面到知識庫 -->
+        <path d="M325,430 L250,430 L250,280 L325,280" marker-end="url(#arrowhead)"/>
+        <text x="270" y="355" text-anchor="middle" font-size="12">用戶反饋</text>
+    </g>
+
+    <!-- 數據類型標籤 -->
+    <g transform="translate(50,500)">
+        <text x="0" y="0" font-size="14" font-weight="bold">數據類型：</text>
+        <g transform="translate(0,30)">
+            <rect width="20" height="20" fill="#f44336"/>
+            <text x="30" y="15">原始數據</text>
+        </g>
+        <g transform="translate(120,30)">
+            <rect width="20" height="20" fill="#2196f3"/>
+            <text x="30" y="15">處理數據</text>
+        </g>
+        <g transform="translate(240,30)">
+            <rect width="20" height="20" fill="#4caf50"/>
+            <text x="30" y="15">分析結果</text>
+        </g>
+        <g transform="translate(360,30)">
+            <rect width="20" height="20" fill="#ff9800"/>
+            <text x="30" y="15">存儲數據</text>
+        </g>
+    </g>
+
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+</svg>

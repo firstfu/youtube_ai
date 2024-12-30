@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold">YouTube視頻頁面交互設計</text>
+
+    <!-- YouTube視頻播放器模擬 -->
+    <g transform="translate(50,80)">
+        <!-- 視頻區域 -->
+        <rect width="700" height="400" fill="#000"/>
+        <text x="350" y="200" text-anchor="middle" fill="#666" font-size="24">視頻播放區域</text>
+
+        <!-- 字幕顯示區 -->
+        <g transform="translate(50,300)">
+            <!-- 原文字幕 -->
+            <rect width="600" height="30" rx="5" fill="rgba(0,0,0,0.7)"/>
+            <text x="300" y="20" text-anchor="middle" fill="white" font-size="14">Original Subtitle Text</text>
+
+            <!-- 翻譯字幕 -->
+            <g transform="translate(0,35)">
+                <rect width="600" height="30" rx="5" fill="rgba(0,0,0,0.7)"/>
+                <text x="300" y="20" text-anchor="middle" fill="white" font-size="14">翻譯後的字幕文本</text>
+            </g>
+        </g>
+
+        <!-- 控制面板 -->
+        <g transform="translate(0,410)">
+            <rect width="700" height="50" fill="#f5f5f5"/>
+
+            <!-- 字幕控制 -->
+            <g transform="translate(20,10)">
+                <rect width="30" height="30" rx="5" fill="#1976d2"/>
+                <text x="15" y="20" text-anchor="middle" fill="white" font-size="14">CC</text>
+            </g>
+
+            <!-- 翻譯控制 -->
+            <g transform="translate(60,10)">
+                <rect width="30" height="30" rx="5" fill="#4caf50"/>
+                <text x="15" y="20" text-anchor="middle" fill="white" font-size="14">翻</text>
+            </g>
+
+            <!-- AI分析按鈕 -->
+            <g transform="translate(100,10)">
+                <rect width="30" height="30" rx="5" fill="#ff9800"/>
+                <text x="15" y="20" text-anchor="middle" fill="white" font-size="14">AI</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 知識面板 -->
+    <g transform="translate(50,500)">
+        <rect width="700" height="80" rx="5" fill="white" stroke="#ddd"/>
+
+        <!-- 標題 -->
+        <text x="20" y="30" font-size="16" font-weight="bold">知識要點</text>
+
+        <!-- 內容預覽 -->
+        <text x="20" y="55" font-size="14">1. 本視頻主要討論...</text>
+        <text x="20" y="75" font-size="14">2. 關鍵概念包括...</text>
+    </g>
+
+    <!-- 交互說明 -->
+    <g transform="translate(580,100)">
+        <!-- 字幕說明 -->
+        <g>
+            <rect width="180" height="60" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+            <text x="10" y="25" font-size="14">雙語字幕</text>
+            <text x="10" y="45" font-size="12">支持多種語言即時翻譯</text>
+        </g>
+
+        <!-- 控制面板說明 -->
+        <g transform="translate(0,80)">
+            <rect width="180" height="60" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+            <text x="10" y="25" font-size="14">快捷控制</text>
+            <text x="10" y="45" font-size="12">一鍵開關各項功能</text>
+        </g>
+
+        <!-- 知識面板說明 -->
+        <g transform="translate(0,160)">
+            <rect width="180" height="60" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+            <text x="10" y="25" font-size="14">知識提取</text>
+            <text x="10" y="45" font-size="12">自動總結視頻要點</text>
+        </g>
+
+        <!-- AI功能說明 -->
+        <g transform="translate(0,240)">
+            <rect width="180" height="60" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+            <text x="10" y="25" font-size="14">AI增強</text>
+            <text x="10" y="45" font-size="12">智能分析和推薦</text>
+        </g>
+    </g>
+
+    <!-- 連接線 -->
+    <g stroke="#1976d2" stroke-width="1" stroke-dasharray="4" fill="none">
+        <path d="M550,330 L580,130"/>
+        <path d="M550,435 L580,210"/>
+        <path d="M550,540 L580,290"/>
+    </g>
+</svg>

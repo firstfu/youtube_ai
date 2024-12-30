@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold">用戶操作流程圖</text>
+
+    <!-- 起始點 -->
+    <g transform="translate(400,100)">
+        <circle cx="0" cy="0" r="20" fill="#4caf50"/>
+        <text x="0" y="5" text-anchor="middle" fill="white">開始</text>
+    </g>
+
+    <!-- 安裝插件 -->
+    <g transform="translate(400,180)">
+        <rect x="-60" y="-20" width="120" height="40" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+        <text x="0" y="5" text-anchor="middle">安裝插件</text>
+    </g>
+
+    <!-- 打開YouTube -->
+    <g transform="translate(400,260)">
+        <rect x="-60" y="-20" width="120" height="40" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+        <text x="0" y="5" text-anchor="middle">打開YouTube</text>
+    </g>
+
+    <!-- 功能選擇 -->
+    <g transform="translate(400,340)">
+        <rect x="-80" y="-30" width="160" height="60" rx="5" fill="#e8f5e9" stroke="#388e3c"/>
+        <text x="0" y="5" text-anchor="middle">選擇功能</text>
+    </g>
+
+    <!-- 功能分支 -->
+    <g transform="translate(200,420)">
+        <rect x="-70" y="-20" width="140" height="40" rx="5" fill="#fff3e0" stroke="#f57c00"/>
+        <text x="0" y="5" text-anchor="middle">字幕翻譯</text>
+    </g>
+
+    <g transform="translate(400,420)">
+        <rect x="-70" y="-20" width="140" height="40" rx="5" fill="#fff3e0" stroke="#f57c00"/>
+        <text x="0" y="5" text-anchor="middle">知識提取</text>
+    </g>
+
+    <g transform="translate(600,420)">
+        <rect x="-70" y="-20" width="140" height="40" rx="5" fill="#fff3e0" stroke="#f57c00"/>
+        <text x="0" y="5" text-anchor="middle">社群互動</text>
+    </g>
+
+    <!-- 結果輸出 -->
+    <g transform="translate(400,500)">
+        <rect x="-80" y="-20" width="160" height="40" rx="5" fill="#e8f5e9" stroke="#388e3c"/>
+        <text x="0" y="5" text-anchor="middle">查看結果</text>
+    </g>
+
+    <!-- 連接線 -->
+    <g stroke="#999" stroke-width="1" fill="none">
+        <!-- 主流程連接 -->
+        <path d="M400,120 L400,160" marker-end="url(#arrowhead)"/>
+        <path d="M400,200 L400,240" marker-end="url(#arrowhead)"/>
+        <path d="M400,280 L400,310" marker-end="url(#arrowhead)"/>
+
+        <!-- 分支連接 -->
+        <path d="M400,370 L200,400" marker-end="url(#arrowhead)"/>
+        <path d="M400,370 L400,400" marker-end="url(#arrowhead)"/>
+        <path d="M400,370 L600,400" marker-end="url(#arrowhead)"/>
+
+        <!-- 結果匯總 -->
+        <path d="M200,440 L400,480" marker-end="url(#arrowhead)"/>
+        <path d="M400,440 L400,480" marker-end="url(#arrowhead)"/>
+        <path d="M600,440 L400,480" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+        </marker>
+    </defs>
+</svg>

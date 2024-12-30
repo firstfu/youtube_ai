@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold">YouTube AI 助手系統架構</text>
+
+    <!-- 前端層 -->
+    <g transform="translate(50,100)">
+        <rect width="700" height="100" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
+        <text x="350" y="35" text-anchor="middle" font-size="18" fill="#1976d2">前端層 (Chrome Extension)</text>
+
+        <!-- 前端組件 -->
+        <g transform="translate(50,50)">
+            <rect width="100" height="30" rx="5" fill="#bbdefb"/>
+            <text x="50" y="20" text-anchor="middle" font-size="12">字幕UI組件</text>
+        </g>
+
+        <g transform="translate(200,50)">
+            <rect width="100" height="30" rx="5" fill="#bbdefb"/>
+            <text x="50" y="20" text-anchor="middle" font-size="12">知識提取UI</text>
+        </g>
+
+        <g transform="translate(350,50)">
+            <rect width="100" height="30" rx="5" fill="#bbdefb"/>
+            <text x="50" y="20" text-anchor="middle" font-size="12">社群互動UI</text>
+        </g>
+
+        <g transform="translate(500,50)">
+            <rect width="100" height="30" rx="5" fill="#bbdefb"/>
+            <text x="50" y="20" text-anchor="middle" font-size="12">設置面板</text>
+        </g>
+    </g>
+
+    <!-- 服務層 -->
+    <g transform="translate(50,250)">
+        <rect width="700" height="150" rx="10" fill="#e8f5e9" stroke="#388e3c"/>
+        <text x="350" y="35" text-anchor="middle" font-size="18" fill="#388e3c">服務層</text>
+
+        <!-- 服務組件 -->
+        <g transform="translate(50,60)">
+            <rect width="120" height="70" rx="5" fill="#c8e6c9"/>
+            <text x="60" y="30" text-anchor="middle" font-size="12">字幕處理引擎</text>
+            <text x="60" y="50" text-anchor="middle" font-size="10">- 實時翻譯</text>
+            <text x="60" y="65" text-anchor="middle" font-size="10">- 同步處理</text>
+        </g>
+
+        <g transform="translate="200,60">
+            <rect width="120" height="70" rx="5" fill="#c8e6c9"/>
+            <text x="60" y="30" text-anchor="middle" font-size="12">AI分析引擎</text>
+            <text x="60" y="50" text-anchor="middle" font-size="10">- 內容理解</text>
+            <text x="60" y="65" text-anchor="middle" font-size="10">- 知識提取</text>
+        </g>
+
+        <g transform="translate(350,60)">
+            <rect width="120" height="70" rx="5" fill="#c8e6c9"/>
+            <text x="60" y="30" text-anchor="middle" font-size="12">社群互動引擎</text>
+            <text x="60" y="50" text-anchor="middle" font-size="10">- 用戶互動</text>
+            <text x="60" y="65" text-anchor="middle" font-size="10">- 內容分享</text>
+        </g>
+
+        <g transform="translate(500,60)">
+            <rect width="120" height="70" rx="5" fill="#c8e6c9"/>
+            <text x="60" y="30" text-anchor="middle" font-size="12">數據處理引擎</text>
+            <text x="60" y="50" text-anchor="middle" font-size="10">- 批量處理</text>
+            <text x="60" y="65" text-anchor="middle" font-size="10">- 數據導出</text>
+        </g>
+    </g>
+
+    <!-- API層 -->
+    <g transform="translate(50,450)">
+        <rect width="700" height="100" rx="10" fill="#fff3e0" stroke="#f57c00"/>
+        <text x="350" y="35" text-anchor="middle" font-size="18" fill="#f57c00">API整合層</text>
+
+        <!-- API組件 -->
+        <g transform="translate(50,50)">
+            <rect width="100" height="30" rx="5" fill="#ffe0b2"/>
+            <text x="50" y="20" text-anchor="middle" font-size="12">YouTube API</text>
+        </g>
+
+        <g transform="translate(200,50)">
+            <rect width="100" height="30" rx="5" fill="#ffe0b2"/>
+            <text x="50" y="20" text-anchor="middle" font-size="12">OpenAI API</text>
+        </g>
+
+        <g transform="translate(350,50)">
+            <rect width="100" height="30" rx="5" fill="#ffe0b2"/>
+            <text x="50" y="20" text-anchor="middle" font-size="12">Translation API</text>
+        </g>
+
+        <g transform="translate(500,50)">
+            <rect width="100" height="30" rx="5" fill="#ffe0b2"/>
+            <text x="50" y="20" text-anchor="middle" font-size="12">Azure Services</text>
+        </g>
+    </g>
+
+    <!-- 連接線 -->
+    <g stroke="#999" stroke-width="1" fill="none">
+        <!-- 前端到服務層 -->
+        <path d="M400,200 L400,250" marker-end="url(#arrowhead)"/>
+        <!-- 服務層到API層 -->
+        <path d="M400,400 L400,450" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+        </marker>
+    </defs>
+</svg>
