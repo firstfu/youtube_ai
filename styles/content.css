@@ -1,0 +1,61 @@
+.ytp-caption-segment {
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+.ai-summary-container {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  padding: 16px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.ai-summary-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.ai-summary-content {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.ai-summary-timestamp {
+  color: #065fd4;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ai-summary-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  border: none;
+  font-size: 14px;
+  line-height: 1;
+  color: #666;
+}
+
+.ai-summary-close:hover {
+  background: #eee;
+  color: #333;
+}
