@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="800" fill="#f8f9fa"/>
+
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold">設置頁面設計</text>
+
+    <!-- 設置頁面框架 -->
+    <g transform="translate(50,80)">
+        <!-- 主要內容區域 -->
+        <rect width="700" height="680" rx="10" fill="white" stroke="#ddd"/>
+
+        <!-- 左側導航欄 -->
+        <g>
+            <rect width="200" height="680" rx="10" fill="#f5f5f5"/>
+
+            <!-- 導航項目 -->
+            <g transform="translate(0,20)">
+                <!-- 通用設置 -->
+                <g>
+                    <rect width="200" height="50" fill="#e3f2fd"/>
+                    <text x="20" y="30" font-size="14">通用設置</text>
+                </g>
+
+                <!-- 字幕設置 -->
+                <g transform="translate(0,50)">
+                    <rect width="200" height="50" fill="#f5f5f5"/>
+                    <text x="20" y="30" font-size="14">字幕設置</text>
+                </g>
+
+                <!-- AI功能設置 -->
+                <g transform="translate(0,100)">
+                    <rect width="200" height="50" fill="#f5f5f5"/>
+                    <text x="20" y="30" font-size="14">AI功能設置</text>
+                </g>
+
+                <!-- 快捷鍵設置 -->
+                <g transform="translate(0,150)">
+                    <rect width="200" height="50" fill="#f5f5f5"/>
+                    <text x="20" y="30" font-size="14">快捷鍵設置</text>
+                </g>
+
+                <!-- 外觀設置 -->
+                <g transform="translate(0,200)">
+                    <rect width="200" height="50" fill="#f5f5f5"/>
+                    <text x="20" y="30" font-size="14">外觀設置</text>
+                </g>
+
+                <!-- 隱私設置 -->
+                <g transform="translate(0,250)">
+                    <rect width="200" height="50" fill="#f5f5f5"/>
+                    <text x="20" y="30" font-size="14">隱私設置</text>
+                </g>
+            </g>
+        </g>
+
+        <!-- 右側設置內容 -->
+        <g transform="translate(220,20)">
+            <!-- 設置標題 -->
+            <text x="20" y="30" font-size="18" font-weight="bold">通用設置</text>
+
+            <!-- 設置項目組 -->
+            <g transform="translate(20,60)">
+                <!-- 語言設置 -->
+                <g>
+                    <text x="0" y="20" font-size="14" font-weight="bold">界面語言</text>
+                    <rect x="0" y="30" width="200" height="40" rx="5" fill="#f5f5f5" stroke="#ddd"/>
+                    <text x="10" y="55" font-size="14">繁體中文</text>
+                </g>
+
+                <!-- 自動啟動 -->
+                <g transform="translate(0,90)">
+                    <text x="0" y="20" font-size="14" font-weight="bold">自動啟動</text>
+                    <rect x="0" y="30" width="60" height="30" rx="15" fill="#4caf50"/>
+                    <circle cx="30" cy="45" r="12" fill="white"/>
+                </g>
+
+                <!-- 默認翻譯語言 -->
+                <g transform="translate(0,140)">
+                    <text x="0" y="20" font-size="14" font-weight="bold">默認翻譯語言</text>
+                    <rect x="0" y="30" width="200" height="40" rx="5" fill="#f5f5f5" stroke="#ddd"/>
+                    <text x="10" y="55" font-size="14">繁體中文</text>
+                </g>
+
+                <!-- 字幕樣式預設 -->
+                <g transform="translate(0,200)">
+                    <text x="0" y="20" font-size="14" font-weight="bold">字幕樣式預設</text>
+                    <!-- 字體大小 -->
+                    <rect x="0" y="30" width="120" height="40" rx="5" fill="#f5f5f5" stroke="#ddd"/>
+                    <text x="10" y="55" font-size="14">字體大小</text>
+                    <!-- 字體顏色 -->
+                    <rect x="140" y="30" width="120" height="40" rx="5" fill="#f5f5f5" stroke="#ddd"/>
+                    <text x="150" y="55" font-size="14">字體顏色</text>
+                </g>
+
+                <!-- AI功能設置 -->
+                <g transform="translate(0,260)">
+                    <text x="0" y="20" font-size="14" font-weight="bold">AI功能</text>
+                    <!-- 自動分析 -->
+                    <rect x="0" y="30" width="60" height="30" rx="15" fill="#4caf50"/>
+                    <circle cx="30" cy="45" r="12" fill="white"/>
+                    <text x="70" y="50" font-size="14">自動分析視頻內容</text>
+                </g>
+
+                <!-- 數據同步 -->
+                <g transform="translate(0,310)">
+                    <text x="0" y="20" font-size="14" font-weight="bold">數據同步</text>
+                    <rect x="0" y="30" width="60" height="30" rx="15" fill="#4caf50"/>
+                    <circle cx="30" cy="45" r="12" fill="white"/>
+                    <text x="70" y="50" font-size="14">啟用雲端同步</text>
+                </g>
+            </g>
+
+            <!-- 底部按鈕 -->
+            <g transform="translate(20,500)">
+                <rect width="120" height="40" rx="5" fill="#1976d2"/>
+                <text x="60" y="25" text-anchor="middle" fill="white" font-size="14">保存更改</text>
+
+                <rect x="140" width="120" height="40" rx="5" fill="#f5f5f5" stroke="#ddd"/>
+                <text x="200" y="25" text-anchor="middle" font-size="14">重置設置</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 說明標籤 -->
+    <g transform="translate(580,100)">
+        <!-- 導航說明 -->
+        <g>
+            <rect width="180" height="60" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+            <text x="10" y="25" font-size="14">左側導航</text>
+            <text x="10" y="45" font-size="12">快速切換不同設置類別</text>
+        </g>
+
+        <!-- 設置項說明 -->
+        <g transform="translate(0,80)">
+            <rect width="180" height="60" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+            <text x="10" y="25" font-size="14">設置選項</text>
+            <text x="10" y="45" font-size="12">詳細的功能配置選項</text>
+        </g>
+
+        <!-- 即時預覽說明 -->
+        <g transform="translate(0,160)">
+            <rect width="180" height="60" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+            <text x="10" y="25" font-size="14">即時預覽</text>
+            <text x="10" y="45" font-size="12">實時查看設置效果</text>
+        </g>
+    </g>
+</svg>
